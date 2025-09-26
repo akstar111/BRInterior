@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NUSASATU Header</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="./style.css" rel="stylesheet" />
+
+    <!-- Google Font (Optional for modern look) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="main-header shadow fixed-top">
+      <!-- Left green area -->
+      <div class="header-left">
+        <span>BR INTERIOR</span>
+      </div>
+
+      <!-- Right -->
+      <div class="header-right">
+        <!-- Desktop Navigation -->
+        <nav class="nav-menu d-none d-lg-flex position-relative">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+
+          <!-- Dropdown for Fruits -->
+          <div class="dropdown position-relative">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Services</a
+            >
+            <div class="dropdown-menu">
+              <a href="./falseceiling.html">False ceiling</a>
+              <a href="./drywall.html">Drywall</a>
+            </div>
+          </div>
+
+          <a href="./projects.html">Projects</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+
+        <!-- Hamburger -->
+        <button class="hamburger d-lg-none" id="hamburgerToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-btn" id="closeMenu">&times;</button>
+      <div class="mobile-nav">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <!-- Fruits with submenu -->
+        <a class="has-submenu" id="toggleSubmenu">Services</a>
+        <div class="submenu" id="submenuItems">
+          <a href="./falseceiling.html">False ceiling</a>
+          <a href="./drywall.html">Drywall</a>
+        </div>
+        <a href="./projects.html">Projects</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- HERO SLIDER -->
+    <div
+      id="heroCarousel"
+      class="carousel slide carousel-fade hero-slider"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div
+          class="carousel-item active"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1637665802693-73c7b9f1e167?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        >
+          <div class="carousel-caption text-start text-dark">
+            <h1>Adventure Awaits</h1>
+            <p>Explore the wild beauty of untouched landscapes.</p>
+            <a href="#" class="btn btn-success bg-color">Contact</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div
+          class="carousel-item active"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1643512475505-1c9e6d17d5c9?q=80&w=1168&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        >
+          <div class="carousel-caption text-start text-dark">
+            <h1>Adventure Awaits</h1>
+            <p>Explore the wild beauty of untouched landscapes.</p>
+            <a href="#" class="btn btn-success bg-color">Contact</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div
+          class="carousel-item active"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1548123834-45623ffa23cf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        >
+          <div class="carousel-caption text-start text-dark">
+            <h1>Adventure Awaits</h1>
+            <p>Explore the wild beauty of untouched landscapes.</p>
+            <a href="#" class="btn btn-success bg-color">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <section class="py-5">
+      <div class="container">
+        <!-- Heading Row -->
+        <div class="row mb-4">
+          <div class="col-lg-4">
+            <h2 class="section-title">Future Plans</h2>
+          </div>
+          <div class="col-lg-8">
+            <p class="text-muted">
+              Where do you go from here? Sustainability reports are not just
+              about looking back, but also looking forward. This SDG Progress
+              Report is a continuous work in progress – a way for your
+              organisation to track its impact and improvements over time. This
+              section outlines your strategy for continuing the good work done
+              so far.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cards Row -->
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card card-custom h-100 p-3">
+              <h5 class="text-primary main-color">Renewable Energy Sources</h5>
+              <hr class="w-25 border-2 border-dark" />
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                natus quo maxime soluta deserunt mollitia harum distinctio
+                molestiae quam, veritatis assumenda, corporis consequuntur nobis
+                dolore error qui nulla, officiis odio?
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-custom h-100 p-3">
+              <h5 class="text-primary main-color">
+                Green Temperature Regulation
+              </h5>
+              <hr class="w-25 border-2 border-dark" />
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                natus quo maxime soluta deserunt mollitia harum distinctio
+                molestiae quam, veritatis assumenda, corporis consequuntur nobis
+                dolore error qui nulla, officiis odio?
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-custom h-100 p-3">
+              <h5 class="text-primary main-color">Sustainable Packaging</h5>
+              <hr class="w-25 border-2 border-dark" />
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                natus quo maxime soluta deserunt mollitia harum distinctio
+                molestiae quam, veritatis assumenda, corporis consequuntur nobis
+                dolore error qui nulla, officiis odio?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview-section py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <!-- Left Column: Image -->
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1743893546039-a919c907bc60?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/600x400"
+              alt="Building"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+
+          <!-- Right Column: Content -->
+          <div class="col-lg-6">
+            <h2 class="overview-title">Overview</h2>
+            <p class="overview-text mt-3">
+              The Sustainable Development Goals (SDGs), also known as Global
+              Goals, are a set of 17 integrated and interrelated goals to end
+              poverty, protect the planet and ensure that humanity enjoys peace
+              and prosperity by 2030.
+            </p>
+            <p class="overview-text">
+              Reporting on the SDGs is important in communicating to
+              stakeholders the company’s commitment to contributing to the
+              Global Goals, claiming accountability and responsibility to take
+              the necessary actions and measuring progress over time.
+            </p>
+            <p class="overview-text">
+              SDG Progress Reports cater to a variety of audiences, so it’s best
+              to adjust it accordingly. First, identify your target reader.
+              Next, you can shift your focus...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <!-- Left Column: Text -->
+          <div class="col-lg-6">
+            <h2 class="foreword-title">Foreword</h2>
+            <p class="foreword-text mt-3">
+              Make your employees feel welcome and valued with a carefully
+              crafted opening message. Aside from serving as a greeting, this
+              space is also great for showing what your company culture is like
+              by example. Share your thoughts on the company’s beginnings and
+              growth. Mention your vision for the company. Remember to express
+              your appreciation and willingness to listen to everyone's ideas.
+            </p>
+            <p class="foreword-text">
+              And finally, remind each person how important they are to the
+              journey and success of the company.
+            </p>
+          </div>
+
+          <!-- Right Column: Image -->
+          <div class="col-lg-6 text-center">
+            <img
+              src="https://images.unsplash.com/photo-1615218238785-f0d22716bf98?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/600x400"
+              alt="Foreword Image"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="container">
+        <h2 class="display-6 mb-2 text-dark">Our Sustainability Goals</h2>
+        <p class="lead text-secondary">
+          There are 17 SDGs and 169 targets in total. While they are all
+          important and interrelated, some will be more relevant to a business
+          than others. This section can identify the specific SDGs and targets
+          prioritized, and demonstrate how they align with the broader business
+          strategy and goals.
+        </p>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="py-4 py-md-5">
+      <div class="container">
+        <div class="row g-4 g-md-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card goal-card text-center position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="icon-circle">
+                  <i class="bi bi-buildings"></i>
+                </div>
+              </div>
+              <div class="card-body mt-4">
+                <h5 class="goal-title text-dark">
+                  Sustainable Cities and Communities
+                </h5>
+                <p class="goal-text">
+                  This space gives more room to summarize the commitment to
+                  inclusive, safe, resilient, and sustainable urban development
+                  initiatives.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card goal-card text-center position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="icon-circle">
+                  <i class="bi bi-droplet-half"></i>
+                </div>
+              </div>
+              <div class="card-body mt-4">
+                <h5 class="goal-title text-dark">Life Under Water</h5>
+                <p class="goal-text">
+                  This space gives more room to outline actions that protect
+                  marine ecosystems, reduce pollution, and promote sustainable
+                  use of ocean resources.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card goal-card text-center position-relative">
+              <div class="position-absolute start-50 translate-middle-x">
+                <div class="icon-circle">
+                  <i class="bi bi-heart-pulse"></i>
+                </div>
+              </div>
+              <div class="card-body mt-4">
+                <h5 class="goal-title text-dark">Good Health and Well-being</h5>
+                <p class="goal-text">
+                  This space gives more room to describe efforts that enhance
+                  health services, promote wellness, and ensure healthy lives
+                  for all ages.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-wrap">
+      <div class="hero-bg"></div>
+
+      <div class="container hero-content">
+        <div class="hero-grid">
+          <!-- Left copy -->
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold mb-3">Creative Studio</h1>
+            <p class="lead mb-4 pe-lg-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui
+              enim, pharetra at auctor vitae, mollis nec risus. Phasellus
+              sagittis lectus at suscipit pulvinar.
+            </p>
+            <a href="#" class="btn btn-accent btn-lg px-4"
+              >Getting Started Today</a
+            >
+          </div>
+
+          <!-- Right card form -->
+          <div class="col-lg-6">
+            <div class="card bg-white">
+              <div class="card-body p-md-5">
+                <h5 class="text-center fw-semibold mb-1">Let’s Talk</h5>
+                <p class="text-center text-secondary mb-4 small">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  dui enim, pharetra.
+                </p>
+
+                <form class="vstack gap-3">
+                  <div>
+                    <label class="form-label small text-secondary" for="name"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control form-control-lg"
+                      placeholder="Name"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="form-label small text-secondary" for="email"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control form-control-lg"
+                      placeholder="Email"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="form-label small text-secondary" for="Message"
+                      >Message</label
+                    >
+                    <input
+                      type="url"
+                      id="website"
+                      class="form-control form-control-lg"
+                      placeholder="Message"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-accent btn-lg w-100 mt-2"
+                  >
+                    SEND
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- /Right card -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-light py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Brand/summary -->
+          <div class="col-12 col-lg-4">
+            <p class="mb-2 small">
+              Appland is completely creative, lightweight, clean app landing
+              page.
+            </p>
+            <p class="mb-3 small">Made with by Designing World.</p>
+            <div class="social">
+              <a aria-label="Facebook" href="#"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a aria-label="Pinterest" href="#"
+                ><i class="bi bi-pinterest"></i
+              ></a>
+              <a aria-label="Dribbble" href="#"
+                ><i class="bi bi-dribbble"></i
+              ></a>
+              <a aria-label="Twitter" href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+
+          <!-- About -->
+          <div class="col-6 col-lg-2">
+            <h6 class="footer-title">About</h6>
+            <a class="footer-link" href="#">About Us</a>
+            <a class="footer-link" href="#">Corporate Sale</a>
+            <a class="footer-link" href="#">Terms &amp; Policy</a>
+            <a class="footer-link" href="#">Community</a>
+          </div>
+
+          <!-- Support -->
+          <div class="col-6 col-lg-3">
+            <h6 class="footer-title">Support</h6>
+            <a class="footer-link" href="#">Help</a>
+            <a class="footer-link" href="#">Support</a>
+            <a class="footer-link" href="#">Privacy Policy</a>
+            <a class="footer-link" href="#">Term &amp; Conditions</a>
+            <a class="footer-link" href="#">Help &amp; Support</a>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-12 col-lg-3">
+            <h6 class="footer-title">Contact</h6>
+            <a class="footer-link" href="#">Call Centre</a>
+            <a class="footer-link" href="#">Email Us</a>
+            <a class="footer-link" href="#">Term &amp; Conditions</a>
+            <a class="footer-link" href="#">Help Center</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Mobile Menu Toggle
+      document.addEventListener("DOMContentLoaded", function () {
+        const openBtn = document.getElementById("hamburgerToggle");
+        const closeBtn = document.getElementById("closeMenu");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        openBtn.addEventListener("click", () => {
+          mobileMenu.classList.add("open");
+        });
+
+        closeBtn.addEventListener("click", () => {
+          mobileMenu.classList.remove("open");
+        });
+
+        // Submenu Toggle
+        const submenuToggle = document.getElementById("toggleSubmenu");
+        const submenuItems = document.getElementById("submenuItems");
+
+        submenuToggle.addEventListener("click", () => {
+          submenuToggle.classList.toggle("open");
+          submenuItems.classList.toggle("open");
+        });
+      });
+    </script>
+  </body>
+</html>

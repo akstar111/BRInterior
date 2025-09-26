@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="./style.css" rel="stylesheet" />
+
+    <!-- Google Font (Optional for modern look) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+   <!-- HEADER -->
+    <header class="main-header shadow fixed-top">
+      <!-- Left green area -->
+      <div class="header-left">
+        <span>BR INTERIOR</span>
+      </div>
+
+      <!-- Right -->
+      <div class="header-right">
+        <!-- Desktop Navigation -->
+        <nav class="nav-menu d-none d-lg-flex position-relative">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+
+          <!-- Dropdown for Fruits -->
+          <div class="dropdown position-relative">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Services</a
+            >
+            <div class="dropdown-menu">
+              <a href="./falseceiling.html">False ceiling</a>
+              <a href="./drywall.html">Drywall</a>
+            </div>
+          </div>
+
+          <a href="./projects.html">Projects</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+
+        <!-- Hamburger -->
+        <button class="hamburger d-lg-none" id="hamburgerToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-btn" id="closeMenu">&times;</button>
+      <div class="mobile-nav">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <!-- Fruits with submenu -->
+        <a class="has-submenu" id="toggleSubmenu">Services</a>
+        <div class="submenu" id="submenuItems">
+          <a href="./falseceiling.html">False ceiling</a>
+          <a href="./drywall.html">Drywall</a>
+        </div>
+        <a href="./projects.html">Projects</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <header class="hero section pb-0">
+      <span class="blob one"></span>
+      <span class="blob two"></span>
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-dark">
+              Membership, events, and payments in one
+              <span class="text-brand">beautiful</span> system
+            </h1>
+            <p class="lead text-secondary mt-3">
+              Automate routine tasks, delight members, and scale with confidence
+              using an all‑in‑one platform crafted for associations, clubs, and
+              communities.
+            </p>
+            <div class="d-flex gap-3 mt-4">
+              <a class="btn btn-brand btn-lg" href="#">Get Started</a>
+            </div>
+            <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
+              <div class="check">
+                <span class="dot">✓</span
+                ><span class="text-secondary">No credit card</span>
+              </div>
+              <div class="check">
+                <span class="dot">✓</span
+                ><span class="text-secondary">Cancel anytime</span>
+              </div>
+              <div class="check">
+                <span class="dot">✓</span
+                ><span class="text-secondary">24/7 support</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img
+              class="illus img-fluid"
+              src="https://images.pexels.com/photos/6893880/pexels-photo-6893880.jpeg?_gl=1*r5ca4z*_ga*ODU5MTE1MTUxLjE3NTg2MjI4MDE.*_ga_8JE65Q40S6*czE3NTg2MjI4MDAkbzEkZzEkdDE3NTg2MjI5NTYkajIwJGwwJGgw"
+              alt="Team collaboration"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Uses Bootstrap grid and utilities for responsive hero layout -->
+
+    <!-- FEATURES (glass cards) -->
+    <section class="section">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="glass p-4 h-100">
+              <div class="icon-xl mb-3">👥</div>
+              <h5 class="fw-semibold mb-2">Membership Organisations</h5>
+              <p class="text-secondary mb-3">
+                Member CRM, dues, and events unified with intelligent
+                automations that save dozens of hours monthly.
+              </p>
+              <a class="btn btn-sm btn-brand rounded-pill" href="#"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="glass p-4 h-100">
+              <div class="icon-xl mb-3">🏛️</div>
+              <h5 class="fw-semibold mb-2">National Associations</h5>
+              <p class="text-secondary mb-3">
+                Coordinate chapters, continuing education, and advocacy with
+                granular roles and permissions.
+              </p>
+              <a class="btn btn-sm btn-brand rounded-pill" href="#"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="glass p-4 h-100">
+              <div class="icon-xl mb-3">🚴</div>
+              <h5 class="fw-semibold mb-2">Clubs & Groups</h5>
+              <p class="text-secondary mb-3">
+                Simple rosters, payments, and event tools that members
+                love—without the admin headache.
+              </p>
+              <a class="btn btn-sm btn-brand rounded-pill" href="#"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Glassmorphism brings depth via backdrop-filter with graceful fallbacks -->
+
+    <!-- MEDIA + COPY 1 -->
+    <section class="section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 text-center text-lg-start">
+            <img
+              class="illus img-fluid"
+              src="./about.jpg"
+              alt="Analytics dashboard"
+            />
+          </div>
+          <div class="col-lg-7">
+            <h3 class="fw-semibold">
+              The unseen of spending three years at Pixelgrade
+            </h3>
+            <p class="text-secondary">
+              Standardize operations, remove repetitive work, and accelerate
+              outcomes with opinionated workflows that scale from day one.
+            </p>
+            <a class="btn btn-brand" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Alternating media/text built with Bootstrap grid responsiveness -->
+
+    <!-- STATS BAND -->
+    <section class="section band">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <h4 class="mb-1">Helping a local</h4>
+            <h4 class="text-brand fw-bold">business reinvent itself</h4>
+            <p class="text-secondary mb-0">
+              Our education hub and templates unlocked efficiency across the
+              org.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+              <div class="col">
+                <div class="glass p-3 h-100">
+                  <div class="d-flex align-items-center gap-3">
+                    <div
+                      class="icon-xl"
+                      style="width: 48px; height: 48px; font-size: 20px"
+                    >
+                      👤
+                    </div>
+                    <div>
+                      <h5 class="mb-0">2,245,341</h5>
+                      <small class="text-secondary">Members</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="glass p-3 h-100">
+                  <div class="d-flex align-items-center gap-3">
+                    <div
+                      class="icon-xl"
+                      style="width: 48px; height: 48px; font-size: 20px"
+                    >
+                      📈
+                    </div>
+                    <div>
+                      <h5 class="mb-0">46,328</h5>
+                      <small class="text-secondary">Clubs</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="glass p-3 h-100">
+                  <div class="d-flex align-items-center gap-3">
+                    <div
+                      class="icon-xl"
+                      style="width: 48px; height: 48px; font-size: 20px"
+                    >
+                      🎫
+                    </div>
+                    <div>
+                      <h5 class="mb-0">828,867</h5>
+                      <small class="text-secondary">Event bookings</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="glass p-3 h-100">
+                  <div class="d-flex align-items-center gap-3">
+                    <div
+                      class="icon-xl"
+                      style="width: 48px; height: 48px; font-size: 20px"
+                    >
+                      💰
+                    </div>
+                    <div>
+                      <h5 class="mb-0">1,926,436</h5>
+                      <small class="text-secondary">Payments</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Band uses Bootstrap grid and spacing utilities for clean collapse behavior -->
+
+    <!-- MEDIA + COPY 2 -->
+    <section class="section">
+      <div class="container">
+        <div class="row align-items-center g-5 flex-lg-row-reverse">
+          <div class="col-lg-5 text-center text-lg-start">
+            <img class="illus img-fluid" src="./61588.jpg" alt="Mobile app" />
+          </div>
+          <div class="col-lg-7">
+            <h3 class="fw-semibold">
+              How to design your site footer like we did
+            </h3>
+            <p class="text-secondary">
+              Group links by intent, keep spacing consistent, and keep actions
+              prominent for effortless scanning and higher conversions.
+            </p>
+            <a class="btn btn-brand" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Alternating layout mirrors the earlier block for rhythm and symmetry -->
+
+    <footer class="footer-light py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Brand/summary -->
+          <div class="col-12 col-lg-4">
+            <p class="mb-2 small">
+              Appland is completely creative, lightweight, clean app landing
+              page.
+            </p>
+            <p class="mb-3 small">Made with by Designing World.</p>
+            <div class="social">
+              <a aria-label="Facebook" href="#"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a aria-label="Pinterest" href="#"
+                ><i class="bi bi-pinterest"></i
+              ></a>
+              <a aria-label="Dribbble" href="#"
+                ><i class="bi bi-dribbble"></i
+              ></a>
+              <a aria-label="Twitter" href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+
+          <!-- About -->
+          <div class="col-6 col-lg-2">
+            <h6 class="footer-title">About</h6>
+            <a class="footer-link" href="#">About Us</a>
+            <a class="footer-link" href="#">Corporate Sale</a>
+            <a class="footer-link" href="#">Terms &amp; Policy</a>
+            <a class="footer-link" href="#">Community</a>
+          </div>
+
+          <!-- Support -->
+          <div class="col-6 col-lg-3">
+            <h6 class="footer-title">Support</h6>
+            <a class="footer-link" href="#">Help</a>
+            <a class="footer-link" href="#">Support</a>
+            <a class="footer-link" href="#">Privacy Policy</a>
+            <a class="footer-link" href="#">Term &amp; Conditions</a>
+            <a class="footer-link" href="#">Help &amp; Support</a>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-12 col-lg-3">
+            <h6 class="footer-title">Contact</h6>
+            <a class="footer-link" href="#">Call Centre</a>
+            <a class="footer-link" href="#">Email Us</a>
+            <a class="footer-link" href="#">Term &amp; Conditions</a>
+            <a class="footer-link" href="#">Help Center</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Mobile Menu Toggle
+      document.addEventListener("DOMContentLoaded", function () {
+        const openBtn = document.getElementById("hamburgerToggle");
+        const closeBtn = document.getElementById("closeMenu");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        openBtn.addEventListener("click", () => {
+          mobileMenu.classList.add("open");
+        });
+
+        closeBtn.addEventListener("click", () => {
+          mobileMenu.classList.remove("open");
+        });
+
+        // Submenu Toggle
+        const submenuToggle = document.getElementById("toggleSubmenu");
+        const submenuItems = document.getElementById("submenuItems");
+
+        submenuToggle.addEventListener("click", () => {
+          submenuToggle.classList.toggle("open");
+          submenuItems.classList.toggle("open");
+        });
+      });
+    </script>
+  </body>
+</html>
